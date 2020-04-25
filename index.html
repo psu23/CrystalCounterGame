@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>The Crystals Game</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+</head>  
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="display-4">The Crystals Game</h1>
+    </div>
+
+    <div class="jumbotron">
+        <p class="lead" id="instructions">
+            You will be given a random number at the start of the game.<br><br>
+            There are four crystals below. By clicking on a crystal you will add a 
+            specific amount of point to your total score.<br><br>
+            You win the game by matching your total score to the random number, you 
+            lose the game if your total score goes above the random number.<br><br>
+            The value of each crystal is hidden from you until you click on it.<br><br>
+            Each time the game starts, the value of each crystal will change.
+        </p>
+    </div>
+
+    <div class="targetbox">
+        <p id="targettext">Target number: 39</p>
+    </div>
+
+    <div class="winslossesbox">
+        <p id="winstext">Wins: </p>
+        <p id="lossestext">Losses: </p>
+    </div>
+
+    <div class="imagesbox">
+        <img class="img" id="crystal-1" src="http://placehold.it/200x200">
+        <img class="img" id="crystal-2" src="http://placehold.it/200x200">
+        <img class="img" id="crystal-3" src="http://placehold.it/200x200">
+        <img class="img" id="crystal-4" src="http://placehold.it/200x200">
+    </div>
+
+    <div class="progresstextbox">
+        <p id="progresstext">Your total so far: </p>
+    </div>
+
+    <div class="progressbox">
+        <p id="progressnum">0</p>
+    </div>
+
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+
+
+</html>

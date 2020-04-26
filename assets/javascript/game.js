@@ -37,26 +37,26 @@ $(document).ready(function() {
         console.log("crystalNumber4: " + crystalNumber4);
         
         userProgress = 0;
-        $("#progressnum").text(userProgress);
+        $("#progresstext").text("Total so far: " + userProgress);
     }
     
     function userWins() {
         wins++;
         alert("Win!");
-        $("#winstext").text(wins);
+        $("#winstext").text("Wins: " + wins);
         reset();
     }
 
     function userLoses() {
         losses++;
         alert("Lose :(");
-        $("#lossestext").text(losses);
+        $("#lossestext").text("Losses: " + losses);
         reset();
     }
 
     $("#crystal-1").on("click", function(){
     userProgress = userProgress + crystalNumber1;
-    $("#progressnum").text(userProgress);
+    $("#progresstext").text("Total so far: " + userProgress);
     console.log("userProgress after clicking crystal 1: " + userProgress);
 
         if (userProgress == targetNumber){
@@ -69,7 +69,7 @@ $(document).ready(function() {
 
     $("#crystal-2").on("click", function(){
         userProgress = userProgress + crystalNumber2;
-        $("#progressnum").text(userProgress);
+        $("#progresstext").text("Total so far: " + userProgress);
         console.log("userProgress after clicking crystal 2: " + userProgress);
     
         if (userProgress == targetNumber){
@@ -82,7 +82,7 @@ $(document).ready(function() {
 
     $("#crystal-3").on("click", function(){
         userProgress = userProgress + crystalNumber3;
-        $("#progressnum").text(userProgress);
+        $("#progresstext").text("Total so far: " + userProgress);
         console.log("userProgress after clicking crystal 3: " + userProgress);
     
         if (userProgress == targetNumber){
@@ -95,7 +95,7 @@ $(document).ready(function() {
 
     $("#crystal-4").on("click", function(){
         userProgress = userProgress + crystalNumber4;
-        $("#progressnum").text(userProgress);
+        $("#progresstext").text("Total so far: " + userProgress);
         console.log("userProgress after clicking crystal 4: " + userProgress);
     
         if (userProgress == targetNumber){

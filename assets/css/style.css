@@ -1,3 +1,78 @@
+/*background image from https://www.pixilart.com/art/unicorn-gif-acfd4924efb2de8 user: @shyia23642*/
+body {
+    background-image: url(../images/unicorn.gif);
+    background-size: 400px;
+}
+
+#first2crystals {
+    float: left;
+}
+
+.wrapper {
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Press Start 2P', cursive;
+    color: #4e0436;
+}
+
 #crystal-1, #crystal-2, #crystal-3, #crystal-4 {
     cursor: pointer;
 }
+
+img {
+    width: 200px;
+}
+
+header {
+    border: solid 7px #e7d5f3; 
+    border-radius: 15px; 
+    margin-top: 30px;
+    background: #f3ebf8;
+    text-align: center;
+}
+
+.titletext {
+    font-size: 40px;
+}
+
+#targettext, #progresstext, #winstext, #lossestext {
+    font-size: 20px;
+}
+
+.row, #instructions {
+    max-width: 850px;
+    border: solid 7px #e7d5f3;
+    border-radius: 15px; 
+    margin-top: 30px;
+    background: #f3ebf8;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagesbox {
+    background-image: url(../images/gifbackground.gif);/* image courtesy of @walternewton https://giphy.com/stickers/3o7aCQrLIjocfdPYYM */
+    border-radius: 15px; 
+    max-width: 850px;
+    background-size: 4px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 860px) {
+
+    #first2crystals, #last2crystals {
+        float: none;
+        text-align: center;
+    }
+
+    .imagesbox {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+

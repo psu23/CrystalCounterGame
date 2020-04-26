@@ -9,53 +9,69 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+
 </head>  
 
 <body>
+    <div class="wrapper">
+        <header>
+            <div class="titletext">The Crystals Game</div>
+        </header>
 
-    <div class="jumbotron">
-        <h1 class="display-4">The Crystals Game</h1>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="targetbox">
+                        <p id="targettext">Target number: 39</p>
+                    </div>
 
-    <div class="jumbotron">
-        <p class="lead" id="instructions">
-            You will be given a random number at the start of the game.<br><br>
-            There are four crystals below. By clicking on a crystal you will add a 
-            specific amount of point to your total score.<br><br>
-            You win the game by matching your total score to the random number, you 
-            lose the game if your total score goes above the random number.<br><br>
-            The value of each crystal is hidden from you until you click on it.<br><br>
-            Each time the game starts, the value of each crystal will change.
-        </p>
-    </div>
+                    <div class="progressbox">
+                        <p id="progresstext">Total so far: 0</p>
+                    </div>
 
-    <div class="targetbox">
-        <p id="targettext">Target number: 39</p>
-    </div>
+                </div>
 
-    <div class="winslossesbox">
-        <p id="winstext">Wins: </p>
-        <p id="lossestext">Losses: </p>
-    </div>
+                <div class="col-md-6">
+                    <div class="winslossesbox">
+                        <p id="winstext">Wins: </p>
+                        <p id="lossestext">Losses: </p>
+                    </div>
+                </div>
+            </div>
 
-    <div class="imagesbox">
-        <img class="img" id="crystal-1" src="http://placehold.it/200x200">
-        <img class="img" id="crystal-2" src="http://placehold.it/200x200">
-        <img class="img" id="crystal-3" src="http://placehold.it/200x200">
-        <img class="img" id="crystal-4" src="http://placehold.it/200x200">
-    </div>
+            
+        </div>
 
-    <div class="progresstextbox">
-        <p id="progresstext">Your total so far: </p>
-    </div>
+        <div class="imagesbox">
+            <div id="first2crystals">
+                <img class="img" id="crystal-1" src="assets/images/crystal-1.png">
+                <img class="img" id="crystal-2" src="assets/images/crystal-2.png">
+            </div>
+            <div id="last2crystals">
+                <img class="img" id="crystal-3" src="assets/images/crystal-3.png">
+                <img class="img" id="crystal-4" src="assets/images/crystal-4.png">
+            </div>
+        </div>
+        
 
-    <div class="progressbox">
-        <p id="progressnum">0</p>
-    </div>
+        <div class="container">
+            <p id="instructions">
+                You will be given a random (target) number at the start of the game.<br><br>
+                There are four crystals above. By clicking on a crystal you will add a 
+                specific amount of points to your total so far.<br><br>
+                You win the game by matching your total to the target number. You 
+                lose the game if your total score goes above the target number.<br><br>
+                The value of each crystal is hidden from you until you click on it.<br><br>
+                Each time the game starts, the value of each crystal will change.
+            </p>
+        </div>
 
+    </div>    
 
     <script src="assets/javascript/game.js"></script>
+
 </body>
 
 

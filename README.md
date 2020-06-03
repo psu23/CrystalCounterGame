@@ -1,6 +1,6 @@
 # Crystal Counter Game
 
-Deployed site: https://psu23.github.io/unit-4-game/
+Deployed site: https://psu23.github.io/CrystalCounterGame/
 
 ### Instructions ###
 

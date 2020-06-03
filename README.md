@@ -22,3 +22,9 @@ There will be four crystals displayed as buttons on the page.
      * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. 
 
    * The app should also keeps track of how many times the player wins or loses.
+
+### Technologies used ###
+
+* JavaScript
+* HTML5
+* CSS3
